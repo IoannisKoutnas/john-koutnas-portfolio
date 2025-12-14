@@ -1,26 +1,72 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --accent: 234 179 8; /* yellow-400 */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Reusable patterns */
+@layer components {
+  .link-accent {
+    @apply transition hover:text-yellow-400;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Skills-style hover card (use for Skills + Projects) */
+  .card-accent {
+    @apply relative rounded-2xl border border-white/15 bg-black/20 transition
+           hover:border-white hover:shadow-md hover:shadow-white/50;
+  }
+
+  /* Highlight cards (Focus / Strengths / Currently learning)
+     - ALWAYS looks like Skills-on-hover
+     - On hover: button-like yellow glow beneath */
+  .card-feature {
+    @apply relative rounded-2xl border border-white bg-black/20
+           shadow-md shadow-white/50 transition;
+  }
+
+  .card-feature::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: inherit;
+    background: radial-gradient(circle, rgba(234, 179, 8, 0.35), transparent 70%);
+    filter: blur(18px);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.25s ease;
+  }
+
+  .card-feature:hover::before {
+    opacity: 1;
+  }
+
+  .card-feature:hover {
+    @apply shadow-md shadow-white/50;
+  }
+
+  .button-accent {
+    @apply rounded-xl border border-white/15 bg-black/20 px-4 py-2
+           text-sm text-zinc-200 transition
+           hover:text-yellow-400 hover:border-white
+           hover:shadow-md hover:shadow-white/50;
+  }
+
+  .button-muted {
+    @apply rounded-xl
+           border border-white
+           bg-white
+           px-4 py-2
+           text-sm font-medium
+           text-black
+           transition
+           hover:text-yellow-400
+           hover:shadow-md hover:shadow-white/50;
+  }
 }
