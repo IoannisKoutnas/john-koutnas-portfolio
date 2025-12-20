@@ -7,25 +7,32 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Sales Performance Dashboard",
+    title: "Graph Theory Analyzer (R / Shiny)",
     description:
-      "Built a clean dashboard to track revenue, orders, and growth over time with filters by region and category.",
-    tags: ["Power BI", "DAX", "Data Modeling"],
-    href: "#",
+      "Interactive R Shiny application for exploring the Zachary Karate Club network. Implements BFS and DFS traversals with step-by-step visualization, greedy graph coloring, cycle detection, and maximum clique identification using a fixed graph layout.",
+    tags: ["R", "Shiny", "igraph", "visNetwork"],
+    href: "https://github.com/IoannisKoutnas/graph-theory-analyzer-r",
   },
   {
-    title: "Customer Churn Analysis",
+    title: "Graph Theory Analyzer (Python GUI)",
     description:
-      "Explored churn drivers, created a simple baseline model, and summarized actionable retention recommendations.",
-    tags: ["Python", "Pandas", "Sklearn"],
-    href: "#",
+      "Python-based desktop application that visualizes fundamental graph algorithms on the Karate Club dataset, including BFS and DFS traversals, greedy coloring, cycle checks, and maximum clique detection, with an integrated logging panel.",
+    tags: ["Python", "NetworkX", "Tkinter", "Matplotlib"],
+    href: "https://github.com/IoannisKoutnas/graph-theory-analyzer-python",
   },
   {
-    title: "SQL Reporting Pack",
+    title: "Amazon Office Products Data App (Python)",
     description:
-      "Wrote reusable SQL queries for weekly reporting: cohorts, retention, top products, and performance KPIs.",
-    tags: ["SQL", "PostgreSQL"],
-    href: "#",
+      "Data analysis and recommendation application for Amazon Office Products review data. Includes exploratory analysis, similarity-based recommendations, and interactive visualizations for product popularity and user behavior.",
+    tags: ["Python", "Pandas", "Scikit-learn", "Recommendation Systems"],
+    href: "https://github.com/IoannisKoutnas/amazon-office-products-data-app-python",
+  },
+  {
+    title: "Amazon Office Products Dashboard (R / Shiny)",
+    description:
+      "R Shiny dashboard focused on collaborative filtering techniques to identify similar users and products in Amazon review data, with interactive plots highlighting rating distributions and popular items.",
+    tags: ["R", "Shiny", "Collaborative Filtering", "Data Visualization"],
+    href: "https://github.com/IoannisKoutnas/amazon-office-products-data-app-r",
   },
 ];
 
@@ -77,13 +84,14 @@ export const skillGroups: { title: string; items: string[] }[] = [
   },
 ];
 
-
 export const highlights: { k: string; v: string }[] = [
   { k: "Focus", v: "Careful data analysis, clean workflows, and reliable results" },
   { k: "Strengths", v: "SQL, Python, data cleaning, and building clear dashboards" },
-  { k: "Currently learning", v: "Business problem framing, KPI definition, and advanced analytics concepts" },
+  {
+    k: "Currently learning",
+    v: "Business problem framing, KPI definition, and advanced analytics concepts",
+  },
 ];
-
 
 export const certifications: { title: string; status: string }[] = [
   { title: "Google Data Analytics", status: "In progress" },

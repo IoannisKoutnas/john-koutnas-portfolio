@@ -17,27 +17,30 @@ html {
     @apply transition hover:text-yellow-400;
   }
 
-  /* Skills-style hover card (use for Skills + Projects) */
+  /* Skills + Projects cards */
   .card-accent {
     @apply relative rounded-2xl border border-white/15 bg-black/20 transition
            hover:border-white hover:shadow-md hover:shadow-white/50;
   }
 
-  /* Highlight cards (Focus / Strengths / Currently learning)
-     - ALWAYS looks like Skills-on-hover
-     - On hover: button-like yellow glow beneath */
+  /* Highlight cards (Focus / Strengths / Currently learning) */
   .card-feature {
-    @apply relative rounded-2xl border border-white bg-black/20
+    @apply relative overflow-hidden rounded-2xl border border-white bg-black/20
            shadow-md shadow-white/50 transition;
   }
 
+  /* SMALL, TIGHT yellow glow */
   .card-feature::before {
     content: "";
     position: absolute;
-    inset: -10px;
+    inset: -2px; /* reduced from -10px */
     border-radius: inherit;
-    background: radial-gradient(circle, rgba(234, 179, 8, 0.35), transparent 70%);
-    filter: blur(18px);
+    background: radial-gradient(
+      circle,
+      rgba(234, 179, 8, 0.28),
+      transparent 55%
+    );
+    filter: blur(8px); /* reduced from 18px */
     opacity: 0;
     z-index: -1;
     transition: opacity 0.25s ease;
@@ -59,12 +62,8 @@ html {
   }
 
   .button-muted {
-    @apply rounded-xl
-           border border-white
-           bg-white
-           px-4 py-2
-           text-sm font-medium
-           text-black
+    @apply rounded-xl border border-white bg-white
+           px-4 py-2 text-sm font-medium text-black
            transition
            hover:text-yellow-400
            hover:shadow-md hover:shadow-white/50;
