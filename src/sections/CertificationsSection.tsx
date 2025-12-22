@@ -32,6 +32,11 @@ const certs = [
     issuer: "IBM (Coursera)",
     image: "/certificates/databases-and-sql-for-data-science-with-python.png",
   },
+  {
+    title: "Data Analysis with Python",
+    issuer: "IBM (Coursera)",
+    image: "/certificates/data_analysis_with_python.png",
+  }
 ];
 
 export default function CertificationsSection() {
