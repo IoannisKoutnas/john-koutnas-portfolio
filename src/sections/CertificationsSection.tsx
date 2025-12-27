@@ -5,42 +5,42 @@ const certs = [
   {
     title: "Data Visualization and Dashboards with Excel and Cognos",
     issuer: "IBM (Coursera)",
-    image: "/certificates/1.data-visualization-excel-cognos.png",
+    image: "/certificates/1_data-visualization-excel-cognos.png",
   },
   {
     title: "Excel Basics for Data Analysis",
     issuer: "IBM (Coursera)",
-    image: "/certificates/2.excel-basics-data-analysis.png",
+    image: "/certificates/2_excel-basics-data-analysis.png",
   },
   {
     title: "Introduction to Data Analytics",
     issuer: "IBM (Coursera)",
-    image: "/certificates/3.introduction-to-data-analytics.png",
+    image: "/certificates/3_introduction-to-data-analytics.png",
   },
   {
     title: "Python for Data Science, AI & Development",
     issuer: "IBM (Coursera)",
-    image: "/certificates/4.python-for-data-science.png",
+    image: "/certificates/4_python-for-data-science.png",
   },
   {
     title: "Python Project for Data Science",
     issuer: "IBM (Coursera)",
-    image: "/certificates/5.python-project.png",
+    image: "/certificates/5_python-project.png",
   },
   {
     title: "Databases and SQL for Data Science with Python",
     issuer: "IBM (Coursera)",
-    image: "/certificates/6.databases-and-sql-for-data-science-with-python.png",
+    image: "/certificates/6_databases-and-sql-for-data-science-with-python.png",
   },
   {
     title: "Data Analysis with Python",
     issuer: "IBM (Coursera)",
-    image: "/certificates/7.data_analysis_with_python.png",
+    image: "/certificates/7_data_analysis_with_python.png",
   },
   {
     title: "Data Visualization with Python",
     issuer: "IBM (Coursera)",
-    image: "/certificates/8.data_visualization_with_python.png",
+    image: "/certificates/8_data_visualization_with_python.png",
   }
 ];
 
