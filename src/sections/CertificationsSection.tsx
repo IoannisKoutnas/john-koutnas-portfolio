@@ -36,6 +36,11 @@ const certs = [
     title: "Data Analysis with Python",
     issuer: "IBM (Coursera)",
     image: "/certificates/data_analysis_with_python.png",
+  },
+  {
+    title: "Data Visualization with Python",
+    issuer: "IBM (Coursera)",
+    image: "/certificates/data-visualization-with-python.png",
   }
 ];
 
